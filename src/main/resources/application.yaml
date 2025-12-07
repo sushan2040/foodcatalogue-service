@@ -1,0 +1,18 @@
+server:
+  port: 9092
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: FOOD-CATALOGUE-SERVICE
+  datasource:
+   url: FOOD_DB_URL
+   password: FOOD_DB_PASSWORD
+   username: FOOD_DB_USERNAME
+   driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
